@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Filter Example</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="api-input">
+            <input type="text" id="dataInput" placeholder='Enter data (comma-separated values)' />
+            <button id="submitButton">Submit</button>
+        </div>
+        <div class="multi-filter">
+            <select id="filterSelect">
+                <option value="">All</option>
+                <option value="Numbers">Numbers</option>
+                <option value="Alphabets">Alphabets</option>
+                <option value="Highest Lowercase Alphabet">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+        <div class="filtered-response">
+            <strong>Filtered Response</strong>
+            <p id="filteredData"></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Filter Example</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Data Filter Application</h1>
+        <div class="api-input">
+            <input type="text" id="dataInput" placeholder="Enter data (comma-separated values)" />
+            <div class="buttons">
+                <button id="submitButton">Submit</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-button" data-filter="Numbers">Filter Numbers</button>
+            <button class="filter-button" data-filter="Alphabets">Filter Alphabets</button>
+            <button class="filter-button" data-filter="Highest Lowercase Alphabet">Highest Lowercase Alphabet</button>
+            <button class="filter-button" data-filter="All">Show All</button>
+        </div>
+        <div class="filtered-response">
+            <strong>Filtered Response</strong>
+            <p id="filteredData"></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
